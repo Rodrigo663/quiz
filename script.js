@@ -281,7 +281,7 @@ const display = function(num) {
 
             DOMelements.box2.removeChild(submit);
             var markup = `        <button type='button' class='btn btn-success suc2'>Restart</button>
-                                <button  onclick="window.location.href=''" type='button' class='btn btn-danger fai2'>Back to Homepage</button>
+                                <button  onclick="window.location.href='https://rodrigo663.github.io/brilliant/'" type='button' class='btn btn-danger fai2'>Back to Homepage</button>
     `
             DOMelements.box2.insertAdjacentHTML('beforeend', markup);
 
