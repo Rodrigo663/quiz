@@ -1,0 +1,126 @@
+body {
+    background-color: blueviolet;
+}
+
+.header {
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 30px;
+
+    
+}
+#alternatives {
+    margin-top: 50px;
+}
+
+#main {
+    
+    
+    
+}
+.suc {
+    margin-top: 40px;
+    margin-left: 525px;
+    width: 90px;
+}
+.fai {
+    margin-top: 40px;
+    margin-left: 80px;
+    width: 90px;
+}
+
+.suc2 {
+    width: 140px;
+    text-align: center;
+    margin-left: 480px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+.fai2 {
+    width: 200px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.div1 {
+    background-color: black;
+    height: 9px;
+    width: 50px;
+}
+
+.image {
+    width: 490px;
+    position: absolute;
+    
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right: 0;
+   
+   
+  
+    
+}
+
+.form-check {
+    font-size: 2rem;
+    color: black;
+
+
+}
+
+.form-check-input {
+    
+    color: blue;
+}
+.btn-group {
+    
+    
+    text-align: center;
+   
+    margin-left: 400px;
+
+}
+.submit {
+   
+
+    background-color: black;
+    color:white;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    /*width: 140px;
+    border-radius: 60px;
+    border-width: 2px;
+    outline-color: white;
+    height: 40px;
+    */
+
+}
+.para {
+    font-family: 'Lato', 'sans-serif';
+    text-align: center;     
+    margin-right: 400px;
+    margin-left: 450px;
+    margin-top: 40px;
+}   
+
+
+.p2 {
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 1.5rem;
+    text-align: center;
+
+    
+
+}
+.expa {
+    margin-left: 600px;
+    margin-bottom: 50px;
+}
+
+
+
+
