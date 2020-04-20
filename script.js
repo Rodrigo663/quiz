@@ -140,6 +140,7 @@ const display = function(num) {
     switch (num) {
         case 0:
             DOMelements.img.style.marginTop = '50px';
+            DOMelements.img.style.width = '75%';
             
             break;
         case 1:
@@ -149,7 +150,7 @@ const display = function(num) {
                 document.querySelector('.btn-group').style.marginLeft= '25%';
             }
           //document.querySelector('.btn-group').style.marginRight= '20%';
-            DOMelements.img.style.width = '240px';
+            DOMelements.img.style.width = '50%';
             DOMelements.img.style.marginTop = '0';
             
 
@@ -172,9 +173,9 @@ const display = function(num) {
                 document.querySelector('.btn-group').style.marginLeft= '33%';
             }
             DOMelements.box2.style.marginTop= '20px';
-            DOMelements.line.style.marginTop= '360px';
+            DOMelements.line.style.marginTop= '250px';
            
-            DOMelements.img.style.width = '600px';
+            //DOMelements.img.style.width = '600px';
             break
         case 6:
             if (width < 1028) {
@@ -183,9 +184,9 @@ const display = function(num) {
                 document.querySelector('.btn-group').style.marginLeft= '41%';
             }
             DOMelements.box2.style.marginTop= '20px';
-            DOMelements.line.style.marginTop= '420px';
-      
-            DOMelements.img.style.width = '600px';
+     
+            DOMelements.line.style.marginTop= '250px';
+            //DOMelements.img.style.width = '600px';
             break
         case 7:
             if (width < 1028) {
@@ -193,7 +194,7 @@ const display = function(num) {
             } else {
                 document.querySelector('.btn-group').style.marginLeft= '39%';
             }
-            DOMelements.img.style.width = '600px';
+            //DOMelements.img.style.width = '600px';
             
             break
         case 8:
@@ -202,7 +203,7 @@ const display = function(num) {
             } else {
                 document.querySelector('.btn-group').style.marginLeft= '35%';
             }
-            DOMelements.img.style.width = '580px';
+            //DOMelements.img.style.width = '580px';
         
             break
         case 9:
@@ -217,13 +218,20 @@ const display = function(num) {
         case 3:
             if (width < 1028) {
                 document.querySelector('.btn-group').style.marginLeft= '25%';
+                DOMelements.img.style.width = '80%';
+                DOMelements.line.style.marginTop= '250px';
             } else {
                 document.querySelector('.btn-group').style.marginLeft= '39%';
+                DOMelements.img.style.width = '600px';
+                DOMelements.line.style.marginTop= '400px';
+               
             }
-            DOMelements.img.style.width = '600px';
+            
+           
+           
             DOMelements.img.style.marginTop = '0px';
             DOMelements.box2.style.marginTop= '20px';
-            DOMelements.line.style.marginTop= '400px';
+           
      
             break
         default:
@@ -232,7 +240,7 @@ const display = function(num) {
             } else {
                 document.querySelector('.btn-group').style.marginLeft= '32%';
             }
-            DOMelements.img.style.width = '300px';
+            //DOMelements.img.style.width = '300px';
             
            
     }
@@ -246,7 +254,7 @@ const display = function(num) {
     if (names[num].id ===1) {
         insertRadio(names[num].options);
         
-       
+        DOMelements.line.style.marginTop = '200px';
         if (width < 1028) {
             document.querySelector('.btn-group').style.marginLeft= '32%';
         } else {
@@ -313,16 +321,16 @@ const display = function(num) {
             DOMelements.img.src= 'https://www.internetsearchinc.com/wp-content/uploads/2014/07/albert-einstein-mistake-quotes.jpg';
             if (width < 1028) {
                 document.querySelector('.image').style.margin = '0';
-                document.querySelector('.image').style.width = '50px';
-                document.querySelector('.image').style.height = '300px';
+             
             }
         
         }
 
         
-        DOMelements.img.style.width = '600px';
-        DOMelements.img.style.marginBottom = '200px';
-        DOMelements.line.style.marginTop = '400px';
+        //DOMelements.img.style.width = '600px';
+        DOMelements.img.style.width = '73%';
+        DOMelements.img.style.marginLeft = '25%';
+        DOMelements.line.style.marginTop = '200px';
         DOMelements.box2.marginBottom = '50px';
        
         DOMelements.question.textContent = finalText;
@@ -589,3 +597,14 @@ document.querySelector(DOMstrings.accept).addEventListener('click', () => {
 
 
 });
+
+
+
+
+
+
+
+
+
+
+
