@@ -1,3 +1,5 @@
+
+
 // Question Object
 var status;
 class Question {
@@ -587,14 +589,3 @@ document.querySelector(DOMstrings.accept).addEventListener('click', () => {
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
