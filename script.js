@@ -1,5 +1,3 @@
-
-
 // Question Object
 var status;
 class Question {
@@ -13,6 +11,8 @@ class Question {
     }
 }
 var rights = new Map;
+
+
 var GlobalCount;
 // Data of the questions
 const questions = ['What is the result of this expression? ', 'Were is DNA located? ', 'What fundamental force has an infinite range?', 'What is the only U.S state that only borders one state?', 'Which number logically follows this series?  ', 'Wich U.S. president served the shortest time in office?  ', 'What is the hottest planet in our solar system? ',  'What element has the lowest number of protons?', 'What´s the name of the substance found on plants wich provides their green color?', 'Using the rules of exponents, simplify'];
@@ -25,7 +25,7 @@ const explanations = [['Following the resolution order:', '1° - Solve the opera
                 ['Flordia borders both Georgia and Alabama on the north.', 'Michigan borders Indiana, Ohio and Wisconsin.', 'Alaska only borders the canadian province of Yukon.', 'Maine only borders New Hampshire.', 'So the right answer: Maine'], 
                 ['It´s easy to find a pattern here:', 'Starting by 4, the next number will also be the last number plus 5.', 'After each new number, there´s always the number 6.', '14, 6... How much is 14+5? That´s easy, 19!'],
                 ['\u2022 James Garfield´s term lasted 199 days.', '\u2022 Gerald Ford´s term lasted 895 days.', '\u2022 John Kennedy´s term lasted 1036 days.', '\u2022 William Harrison´s term lasted for miserable 31 days!', 'So the right answer: William Harrison.'],
-                [ "Altough it´s true that Mercury is the closest planet from the sun, we need more context here. The explanation to it lies in the fact that Venus has a very dense atmosphere made up of carbon dioxide, nitrogen, and sulfuric acid, while Mercury has a very thin atmosphere with various gases, but very little carbon dioxide. So what´s so important about carbon dioxide? Well, sunlight will pass through Venus' clouds (which contain mostly carbon dioxide) and warm the surface of the planet. Usually, the surface of a planet is warmed during the day and cools off at night by releasing infrared radiation (heat) back into space. But the carbon dioxide in Venus clouds absorbs energy from infrared radiation very well and 'traps' the heat on the planet, making it very warm. This has sometimes been called a 'runaway greenhouse effect.' We don't see this happen on Mercury because its atmosphere is not thick and does not have much carbon dioxide in it."],
+                [ "Altough it´s true that Mercury is the closest planet from the sun, we need more context here. This is a great question! The answer to it lies in the fact that Venus has a very dense atmosphere made up of carbon dioxide, nitrogen, and sulfuric acid, while Mercury has a very thin atmosphere with various gases, but very little carbon dioxide. So what´s so important about carbon dioxide? Well, sunlight will pass through Venus' clouds (which contain mostly carbon dioxide) and warm the surface of the planet. Usually, the surface of a planet is warmed during the day and cools off at night by releasing infrared radiation (heat) back into space. But the carbon dioxide in Venus clouds absorbs energy from infrared radiation very well and 'traps' the heat on the planet, making it very warm. This has sometimes been called a 'runaway greenhouse effect.' We don't see this happen on Mercury because its atmosphere is not thick and does not have much carbon dioxide in it. I hope this helps!"],
                 ['\u2022 Lithium´s athom carries 3 protons.', '\u2022 Helium´s athom carries 2 protons.', '\u2022 Hydrogen´s athom carries only 1 proton.', '\u2022 Berylium´s athom carries 4 protons.', 'So the right answer: Hydrogen.'],
                 [ 'First of all photosynthesis is a process, not a substance.', 'Second glucose and fructose are only a sugar found in grapes and other fruits.', 'Therfore the substance that provides green color for the plants is called Chlorophyll.'],
                 ['Images/resolution.png']];
@@ -48,7 +48,9 @@ for (i=0; i < 10; i++) {
 
 
 // DOM strings
-
+const width = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
 const DOMstrings = {
     accept: '.suc',
     main: 'main',
@@ -117,66 +119,9 @@ const display = function(num) {
 
     DOMelements.question.textContent = names[num].question;
     DOMelements.img.src = names[num].image;
-    switch (num) {
-        case 0:
-            DOMelements.img.style.marginTop = '50px';
-            
-            break;
-        case 1:
-            document.querySelector('.btn-group').style.marginLeft= '380px';
-            DOMelements.img.style.width = '240px';
-            DOMelements.img.style.marginTop = '0';
-            
-
-            break;
-        case 4:
-            DOMelements.box2.style.marginTop= '20px';
-            DOMelements.line.style.marginTop= '130px';
-            document.querySelector('.btn-group').style.marginLeft= '600px';
-           
-            break;
-        case 5:
-            DOMelements.box2.style.marginTop= '20px';
-            DOMelements.line.style.marginTop= '360px';
-            document.querySelector('.btn-group').style.marginLeft= '430px';
-            DOMelements.img.style.width = '600px';
-            break
-        case 6:
-            DOMelements.box2.style.marginTop= '20px';
-            DOMelements.line.style.marginTop= '420px';
-            document.querySelector('.btn-group').style.marginLeft= '550px';
-            DOMelements.img.style.width = '600px';
-            break
-        case 7:
-            DOMelements.img.style.width = '600px';
-            document.querySelector('.btn-group').style.marginLeft= '530px';
-            break
-        case 8:
-            DOMelements.img.style.width = '580px';
-            document.querySelector('.btn-group').style.marginLeft= '490px';
-            break
-        case 9:
-            document.querySelector('.btn-group').style.marginLeft= '575px';
-            break;
-        case 3:
-            DOMelements.img.style.width = '600px';
-            DOMelements.img.style.marginTop = '0px';
-            DOMelements.box2.style.marginTop= '20px';
-            DOMelements.line.style.marginTop= '400px';
-            document.querySelector('.btn-group').style.marginLeft= '520px';
-            break
-        default:
-            DOMelements.img.style.width = '300px';
-            document.querySelector('.btn-group').style.marginLeft= '400px';
-           
-    }
-
-    
-    
-    
     if (num ===9) {
         DOMelements.img2.style.marginTop= "30px";
-        DOMelements.img2.style.marginLeft = "580px";
+        DOMelements.img2.style.marginLeft = "620px";
      
         
         DOMelements.img.style.width = '200px';
@@ -190,11 +135,129 @@ const display = function(num) {
 
     
     };
+    switch (num) {
+        case 0:
+            DOMelements.img.style.marginTop = '50px';
+            
+            break;
+        case 1:
+            if (width < 1028) {
+                document.querySelector('.btn-group').style.marginLeft= '1%';
+            } else {
+                document.querySelector('.btn-group').style.marginLeft= '25%';
+            }
+          //document.querySelector('.btn-group').style.marginRight= '20%';
+            DOMelements.img.style.width = '240px';
+            DOMelements.img.style.marginTop = '0';
+            
+
+            break;
+        case 4:
+            DOMelements.box2.style.marginTop= '20px';
+            DOMelements.line.style.marginTop= '130px';
+            if (width < 1028) {
+                document.querySelector('.btn-group').style.marginLeft= '35%';
+            } else {
+                document.querySelector('.btn-group').style.marginLeft= '44%';
+            }
+          //  document.querySelector('.btn-group').style.marginRight= '20%';
+           
+            break;
+        case 5:
+            if (width < 1028) {
+                document.querySelector('.btn-group').style.marginLeft= '2%';
+            } else {
+                document.querySelector('.btn-group').style.marginLeft= '33%';
+            }
+            DOMelements.box2.style.marginTop= '20px';
+            DOMelements.line.style.marginTop= '360px';
+           
+            DOMelements.img.style.width = '600px';
+            break
+        case 6:
+            if (width < 1028) {
+                document.querySelector('.btn-group').style.marginLeft= '23%';
+            } else {
+                document.querySelector('.btn-group').style.marginLeft= '41%';
+            }
+            DOMelements.box2.style.marginTop= '20px';
+            DOMelements.line.style.marginTop= '420px';
+      
+            DOMelements.img.style.width = '600px';
+            break
+        case 7:
+            if (width < 1028) {
+                document.querySelector('.btn-group').style.marginLeft= '16%';
+            } else {
+                document.querySelector('.btn-group').style.marginLeft= '39%';
+            }
+            DOMelements.img.style.width = '600px';
+            
+            break
+        case 8:
+            if (width < 1028) {
+                document.querySelector('.btn-group').style.marginLeft= '8%';
+            } else {
+                document.querySelector('.btn-group').style.marginLeft= '35%';
+            }
+            DOMelements.img.style.width = '580px';
+        
+            break
+        case 9:
+            if (width < 1028) {
+                document.querySelector('.btn-group').style.marginLeft= '36%';
+                DOMelements.img2.style.marginLeft = "40%";
+            } else {
+                document.querySelector('.btn-group').style.marginLeft= '44%';
+                
+            }
+            break;
+        case 3:
+            if (width < 1028) {
+                document.querySelector('.btn-group').style.marginLeft= '25%';
+            } else {
+                document.querySelector('.btn-group').style.marginLeft= '39%';
+            }
+            DOMelements.img.style.width = '600px';
+            DOMelements.img.style.marginTop = '0px';
+            DOMelements.box2.style.marginTop= '20px';
+            DOMelements.line.style.marginTop= '400px';
+     
+            break
+        default:
+            if (width < 1028) {
+                document.querySelector('.btn-group').style.marginLeft= '0.5%';
+            } else {
+                document.querySelector('.btn-group').style.marginLeft= '32%';
+            }
+            DOMelements.img.style.width = '300px';
+            
+           
+    }
+
+    
+    
+    
+  
 
 
     if (names[num].id ===1) {
         insertRadio(names[num].options);
-        document.querySelector('.btn-group').style.marginLeft= '540px';
+        
+       
+        if (width < 1028) {
+            document.querySelector('.btn-group').style.marginLeft= '32%';
+        } else {
+            document.querySelector('.btn-group').style.marginLeft= '42%';
+
+        }
+        
+
+        
+
+        
+
+        ;
         
     } else {
         change(names[num].options);
@@ -246,7 +309,11 @@ const display = function(num) {
         } else  {
             finalText = `Even if you weren´t perfect, you learned a lot. Your score was ${number}/10.`;
             DOMelements.img.src= 'https://www.internetsearchinc.com/wp-content/uploads/2014/07/albert-einstein-mistake-quotes.jpg';
-
+            if (width < 1028) {
+                document.querySelector('.image').style.margin = '0';
+                document.querySelector('.image').style.width = '50px';
+                document.querySelector('.image').style.height = '300px';
+            }
         
         }
 
@@ -280,14 +347,21 @@ const display = function(num) {
             };
 
             DOMelements.box2.removeChild(submit);
-            var markup = `        <button type='button' class='btn btn-success suc2'>Restart</button>
-                                <button  onclick="window.location.href='https://rodrigo663.github.io/brilliant/'" type='button' class='btn btn-danger fai2'>Back to Homepage</button>
-    `
+            var markup = `        <div class='row'>
+                    <div class='col-lg-6'>
+                        <button type='button' class='btn btn-success suc2'>Restart</button>
+                    </div class='col-lg-6'>
+                        <button  onclick="window.location.href=''" type='button' class='btn btn-danger fai2'>Back to Homepage</button>
+                    </div>
+                </div>`;
             DOMelements.box2.insertAdjacentHTML('beforeend', markup);
-
+            if (width < 1028) {
+                document.querySelector('.suc2').style.marginLeft= '40%';
+                document.querySelector('.fai2').style.marginLeft= '40%';
+            };
             document.querySelector('.suc2').addEventListener('click', () => {
                 location.reload();
-            })
+            });
             // Add results
             results();
 
@@ -513,6 +587,8 @@ document.querySelector(DOMstrings.accept).addEventListener('click', () => {
 
 
 });
+
+
 
 
 
