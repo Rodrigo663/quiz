@@ -140,17 +140,27 @@ const display = function(num) {
     switch (num) {
         case 0:
             DOMelements.img.style.marginTop = '50px';
-            DOMelements.img.style.width = '75%';
+            if (width < 1028) {
+                
+                DOMelements.img.style.width = '75%';
+              
+            } else {
+                DOMelements.img.style.width = '50%';
+            }
             
             break;
         case 1:
             if (width < 1028) {
                 document.querySelector('.btn-group').style.marginLeft= '1%';
+                DOMelements.img.style.width = '60%';
+              
             } else {
                 document.querySelector('.btn-group').style.marginLeft= '25%';
+                DOMelements.img.style.width = '20%';
             }
           //document.querySelector('.btn-group').style.marginRight= '20%';
-            DOMelements.img.style.width = '50%';
+    
+            
             DOMelements.img.style.marginTop = '0';
             
 
@@ -162,8 +172,9 @@ const display = function(num) {
                 document.querySelector('.btn-group').style.marginLeft= '35%';
             } else {
                 document.querySelector('.btn-group').style.marginLeft= '44%';
+               
             }
-          //  document.querySelector('.btn-group').style.marginRight= '20%';
+          
            
             break;
         case 5:
@@ -171,30 +182,35 @@ const display = function(num) {
                 document.querySelector('.btn-group').style.marginLeft= '2%';
             } else {
                 document.querySelector('.btn-group').style.marginLeft= '33%';
+                DOMelements.img.style.width = '36%';
             }
             DOMelements.box2.style.marginTop= '20px';
             DOMelements.line.style.marginTop= '250px';
            
-            //DOMelements.img.style.width = '600px';
+            
             break
         case 6:
             if (width < 1028) {
                 document.querySelector('.btn-group').style.marginLeft= '23%';
+                DOMelements.line.style.marginTop= '250px';
             } else {
                 document.querySelector('.btn-group').style.marginLeft= '41%';
+                DOMelements.img.style.width = '38%';
+                DOMelements.line.style.marginTop= '350px';
             }
             DOMelements.box2.style.marginTop= '20px';
      
-            DOMelements.line.style.marginTop= '250px';
-            //DOMelements.img.style.width = '600px';
+            
+            
             break
         case 7:
             if (width < 1028) {
                 document.querySelector('.btn-group').style.marginLeft= '16%';
             } else {
                 document.querySelector('.btn-group').style.marginLeft= '39%';
+                DOMelements.img.style.width = '35%';
             }
-            //DOMelements.img.style.width = '600px';
+            
             
             break
         case 8:
@@ -202,8 +218,9 @@ const display = function(num) {
                 document.querySelector('.btn-group').style.marginLeft= '8%';
             } else {
                 document.querySelector('.btn-group').style.marginLeft= '35%';
+                DOMelements.img.style.width = '33%';
             }
-            //DOMelements.img.style.width = '580px';
+            
         
             break
         case 9:
@@ -239,8 +256,9 @@ const display = function(num) {
                 document.querySelector('.btn-group').style.marginLeft= '0.5%';
             } else {
                 document.querySelector('.btn-group').style.marginLeft= '32%';
+                DOMelements.img.style.width = '30%';
             }
-            //DOMelements.img.style.width = '300px';
+            
             
            
     }
@@ -328,9 +346,19 @@ const display = function(num) {
 
         
         //DOMelements.img.style.width = '600px';
-        DOMelements.img.style.width = '73%';
-        DOMelements.img.style.marginLeft = '25%';
-        DOMelements.line.style.marginTop = '200px';
+        if (width < 1028) {
+            DOMelements.img.style.width = '73%';
+            DOMelements.img.style.marginLeft = '15%';
+            DOMelements.line.style.marginTop = '200px';
+         
+        } else {
+            DOMelements.img.style.width = '38%';
+            DOMelements.img.style.marginLeft = '33%';
+            DOMelements.line.style.marginTop = '350px';
+        }
+        
+       
+        
         DOMelements.box2.marginBottom = '50px';
        
         DOMelements.question.textContent = finalText;
@@ -597,8 +625,6 @@ document.querySelector(DOMstrings.accept).addEventListener('click', () => {
 
 
 });
-
-
 
 
 
