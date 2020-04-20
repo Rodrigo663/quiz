@@ -3,9 +3,9 @@ body {
 }
 
 .header {
-   text-align: center;
-   margin-top: 20px;
-   margin-bottom: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
 
     
 }
@@ -19,28 +19,49 @@ body {
     
 }
 .suc {
+    /*
     margin-top: 40px;
-    margin-left: 525px;
+    
+    */
     width: 90px;
+    padding: 0;
+    margin-left: 50%;
+   
+}
+.my-row {
+    margin: auto;
+    text-align: center;
+    padding: 0;
 }
 .fai {
+    
+    /*
     margin-top: 40px;
     margin-left: 80px;
+    */
+    margin-right: 50%;
+    padding: 0;
     width: 90px;
+    
 }
+/*
 
+margin-left: 50px;
+*/
 .suc2 {
+    margin-left: 70%;
     width: 140px;
     text-align: center;
-    margin-left: 480px;
+    
     margin-top: 10px;
     margin-bottom: 10px;
    
 }
 .fai2 {
+   
     width: 200px;
     text-align: center;
-    margin-left: 50px;
+    
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -102,8 +123,8 @@ body {
 .para {
     font-family: 'Lato', 'sans-serif';
     text-align: center;     
-    margin-right: 400px;
-    margin-left: 450px;
+    /*margin-right: 400px;
+    margin-left: 450px;*/
     margin-top: 40px;
 }   
 
@@ -117,8 +138,51 @@ body {
 
 }
 .expa {
-    margin-left: 600px;
-    margin-bottom: 50px;
+    margin: 20px -50px; 
+    margin-top: 0;
+    margin-bottom: 20px;
+    position:relative;
+    top:50%; 
+    left:48%;
+   
+}
+
+
+
+
+@media (max-width: 1028px)  {
+    .submit {
+        margin-bottom: 30px;
+    }
+    
+    .expa {
+        margin: 20px -50px; 
+        margin-top: 0;
+        margin-bottom: 20px;
+        position:relative;
+        top:50%; 
+        left:46%;
+        
+        
+    }
+    .fai {
+        margin-top: 40px;
+        margin-right: 0;
+    }
+    .suc {
+        margin-left: 0;
+    }
+    .btn-group {
+    
+    
+        text-align: center;
+    
+        margin-left: 0px;
+    }
+    .expla-img {
+        width: 520px;
+    }
+
 }
 
 
